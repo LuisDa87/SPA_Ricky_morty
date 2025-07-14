@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const CopyWebpackPlugin = require('copy-webpack-plugin'); // Ya no lo necesitamos
 
 module.exports = {
     entry: './src/index.js',
@@ -14,13 +14,10 @@ module.exports = {
     module: {
         rules: [
             {
-                // Se corrigió la expresión regular a la estándar para archivos .js
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
-                    // ----> ¡AQUÍ ESTÁ LA CORRECCIÓN! <----
-                    // Se añade el objeto 'options' para decirle a Babel qué preset usar.
                     options: {
                         presets: ['@babel/preset-env']
                     }
@@ -35,9 +32,12 @@ module.exports = {
             filename: './index.html',
             }
         ),
+        /*
+        // Eliminamos este plugin porque ya no tenemos un archivo CSS separado
         new CopyWebpackPlugin({
             patterns: [{ from: './src/styles/styles.css',
             to: '' }],
         })
+        */
     ]
 };

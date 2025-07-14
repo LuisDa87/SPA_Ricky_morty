@@ -1,0 +1,79 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Administrador",
+      "email": "admin@eventos.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "7ed6",
+      "name": "Luis David Ducuara",
+      "email": "luisdavidducuara6984@gmail.com",
+      "password": "123",
+      "role": "register"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "userId": 1,
+      "name": "Concierto de Rock Sinfónico",
+      "description": "Una noche inolvidable con los mejores clásicos del rock interpretados por una orquesta sinfónica.",
+      "image": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=1974&auto=format&fit=crop",
+      "date": "2025-10-26T20:00:00",
+      "category": "Cultural",
+      "capacity": 500,
+      "attendees": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Maratón Anual de la Ciudad",
+      "description": "Corre por las calles de la ciudad en nuestro evento deportivo más grande del año. ¡Inscripciones abiertas!",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop",
+      "date": "2025-11-15T07:00:00",
+      "category": "Deportivo",
+      "capacity": 2000,
+      "attendees": []
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "name": "Congreso de Tecnología y Futuro",
+      "description": "Expertos de todo el mundo se reúnen para discutir las últimas tendencias en inteligencia artificial y desarrollo.",
+      "image": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070&auto=format&fit=crop",
+      "date": "2025-09-05T09:00:00",
+      "category": "Académico",
+      "capacity": 350,
+      "attendees": []
+    },
+    {
+      "id": "95ea",
+      "userId": "1",
+      "name": "Runnir Medellin",
+      "description": "Carrera por Medellin 25 km ",
+      "date": "2025-07-28T12:30",
+      "category": "Cultural",
+      "image": "https://telemedellin.tv/wp-content/uploads/2022/07/Runnmaker-Diego-Ortega.jpeg",
+      "capacity": 100,
+      "attendees": []
+    },
+    {
+      "id": "e93c",
+      "userId": "7ed6",
+      "name": "Boxing Club",
+      "description": "Evento de boxeo polideportivo sur de envigado",
+      "date": "2025-07-23T16:50",
+      "category": "Deportivo",
+      "image": "https://telemedellin.tv/wp-content/uploads/2022/07/Runnmaker-Diego-Ortega.jpeg",
+      "capacity": 25,
+      "attendees": [
+        "7ed6"
+      ]
+    }
+  ]
+}
