@@ -1,0 +1,3 @@
+# Proyecto Científico - SPA de Rick and Morty
+
+Una aplicación de página única creada con JavaScript vanilla, Webpack y la API de Rick and Morty.
